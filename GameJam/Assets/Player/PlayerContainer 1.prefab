@@ -355,6 +355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a203df8c731528409811737c3bcaf18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 4223584283538797197}
   HammerPrefab: {fileID: 2167145983628633731, guid: a083971b0449efa40a359cfaaadd3b24, type: 3}
   ThrowPos: {fileID: 1240814560734707002}
   hammerSpeed: 5
