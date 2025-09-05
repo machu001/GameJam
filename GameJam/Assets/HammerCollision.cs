@@ -28,8 +28,12 @@ public class HammerCollision : MonoBehaviour
         {
             if(go.CompareTag("Destructible"))
             {
-                Destroy(go);
-                
+                if (collision.gameObject.TryGetComponent<DestructibleHandler>(out DestructibleHandler t))
+                {
+                    Debug.Log("Znalaz³o komponent");
+                    t.SwapPrefabs();
+                }
+              
             }
             countdown = true;
         }
