@@ -25,10 +25,10 @@ public class HammerThrow : MonoBehaviour
         
         if (Input.GetMouseButton(1))
         {
-            if (currCD <= 0)
+            if (currCD >= 0)
             {
-                holdTime += Time.deltaTime;
-                if (holdTime > 0.25f) cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 50, 0.05f);
+                holdTime -= Time.deltaTime;
+                if (holdTime > 0.25f) cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 50, 0.01f);
             }
         }
         if (Input.GetMouseButtonUp(1))
