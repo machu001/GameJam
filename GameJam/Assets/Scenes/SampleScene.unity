@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &225801074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 225801075}
+  m_Layer: 0
+  m_Name: ThrowPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &225801075
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225801074}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.345, z: 1.346}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3651701369236397550}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,6 +836,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &3651701369236397550 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7977938206384463848, guid: 2fbe8a9fb54626643b1ee72173991158, type: 3}
+  m_PrefabInstance: {fileID: 8966646629346762322}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4465962715574971968 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6850386454422284313, guid: 2fbe8a9fb54626643b1ee72173991158, type: 3}
@@ -892,11 +928,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7977938206384463848, guid: 2fbe8a9fb54626643b1ee72173991158, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 225801075}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6850386454422284313, guid: 2fbe8a9fb54626643b1ee72173991158, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9031144518000056031}
+    - targetCorrespondingSourceObject: {fileID: 6850386454422284313, guid: 2fbe8a9fb54626643b1ee72173991158, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9031144518000056032}
   m_SourcePrefab: {fileID: 100100000, guid: 2fbe8a9fb54626643b1ee72173991158, type: 3}
 --- !u!114 &9031144518000056031
 MonoBehaviour:
@@ -913,6 +955,22 @@ MonoBehaviour:
   player: {fileID: 6647979175770390874}
   destroyRange: 2
   mouseLookScript: {fileID: 7396756184156834832}
+--- !u!114 &9031144518000056032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4465962715574971968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a203df8c731528409811737c3bcaf18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HammerPrefab: {fileID: 2167145983628633731, guid: a083971b0449efa40a359cfaaadd3b24, type: 3}
+  ThrowPos: {fileID: 225801075}
+  hammerSpeed: 5
+  throwCD: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
