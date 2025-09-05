@@ -32,7 +32,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1240814560734707002}
   m_Father: {fileID: 3160574877331364676}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &4223584283538797197
@@ -263,6 +264,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraPos: {fileID: 6484341964588360855}
+--- !u!1 &6420962904894000440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1240814560734707002}
+  m_Layer: 0
+  m_Name: ThrowPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1240814560734707002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6420962904894000440}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.345, z: 1.346}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7977938206384463848}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &6850386454422284313
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +304,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3588664501631367843}
+  - component: {fileID: 5987788817800344162}
+  - component: {fileID: 5832981913370697132}
   m_Layer: 0
   m_Name: Orientation
   m_TagString: Untagged
@@ -294,6 +328,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7587519410982353480}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5987788817800344162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6850386454422284313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf61b467b78fcd34b8b4f2e1e058ab38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8114082588903518241}
+  destroyRange: 2
+  mouseLookScript: {fileID: 3805855015930394757}
+--- !u!114 &5832981913370697132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6850386454422284313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a203df8c731528409811737c3bcaf18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HammerPrefab: {fileID: 2167145983628633731, guid: a083971b0449efa40a359cfaaadd3b24, type: 3}
+  ThrowPos: {fileID: 1240814560734707002}
+  hammerSpeed: 5
+  throwCD: 1
 --- !u!1 &8114082588903518241
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,7 +487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   groundDrag: 2
-  jumpForce: 20
+  jumpForce: 15
   jumpCooldown: 0.25
   airMultiplier: 0.4
   playerHeight: 2
@@ -439,8 +504,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8114082588903518241}
   serializedVersion: 4
-  m_Mass: 3
-  m_Drag: 2
+  m_Mass: 5
+  m_Drag: 10
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}

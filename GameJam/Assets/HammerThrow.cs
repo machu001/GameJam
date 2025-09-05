@@ -1,8 +1,16 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class HammerThrow : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject HammerPrefab;
+    public Transform ThrowPos;
+
+    public float hammerSpeed;
+
+    public float throwCD;
+    float currCD;
+
     void Start()
     {
         
@@ -11,6 +19,26 @@ public class HammerThrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(1))
+        {
+            if (currCD <= 0)
+            {
+                ThrowHammer();
+            }
+
+           
+        }
+
+        if(currCD > 0) currCD -= Time.deltaTime;
     }
+
+    void ThrowHammer()
+    {
+        GameObject thrownObj = Instantiate(HammerPrefab, ThrowPos);
+        thrownObj.transform.parent = null;
+        currCD = throwCD;
+        Rigidbody hammerRB = thrownObj.GetComponent<Rigidbody>();
+        hammerRB.linearVelocity = transform.forward * hammerSpeed;
+    }
+
 }
