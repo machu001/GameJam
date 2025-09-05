@@ -1,7 +1,10 @@
+using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class DestroyObject : MonoBehaviour
 {
+    public Animator animator;
     public GameObject player;
     GameObject clickedObj;
     public float destroyRange;
@@ -30,10 +33,17 @@ public class DestroyObject : MonoBehaviour
                     Debug.Log("Raycast dzia³a");
                     if(hit.transform.gameObject.CompareTag("Destructible"))
                     {
+                        animator.SetInteger("HammerState", 1);
+                        animator.SetInteger("HammerState", 0);
+                        StartCoroutine(Wait(0.6f));
                         clickedObj = hit.transform.gameObject;
                         Destroy(clickedObj);
+
                     }   
                 }
+                animator.SetInteger("HammerState", 1);
+                animator.SetInteger("HammerState", 0);
+                StartCoroutine(Wait(0.6f));
             }
         }
     }
@@ -49,5 +59,10 @@ public class DestroyObject : MonoBehaviour
             clickedObj.transform.position = transform.position + new Vector3(0f, -0.5f, 0f);
         }
      
+    }
+
+    private IEnumerator Wait(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
     }
 }
