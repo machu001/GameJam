@@ -389,7 +389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 4223584283538797197}
-  HammerPrefab: {fileID: 2167145983628633731, guid: a083971b0449efa40a359cfaaadd3b24, type: 3}
+  HammerPrefab: {fileID: 7528683145629275565, guid: 5dc9d9107e4c4934786ea1762f4ddf96, type: 3}
   ThrowPos: {fileID: 1240814560734707002}
   hammerSpeed: 5
   throwCD: 1
