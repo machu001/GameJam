@@ -5,6 +5,7 @@ using System.Collections;
 public class DialogueScript : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
+    public GameObject DialogueBox;
     public string[] lines;
     public float textSpeed;
 
@@ -14,13 +15,25 @@ public class DialogueScript : MonoBehaviour
     void Start()
     {
         textComponent.text = string.Empty;
-        StartDialogue();
+
+        Invoke("StartDialogue", 5f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (textComponent.text == lines[index])
+            {
+                NextLine();
+            }
+            else
+            {
+                StopAllCoroutines();
+                textComponent.text = lines[index];
+            }
+        }
     }
 
     void StartDialogue()
@@ -48,7 +61,7 @@ public class DialogueScript : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            DialogueBox.SetActive(false);
         }
     }
 }
