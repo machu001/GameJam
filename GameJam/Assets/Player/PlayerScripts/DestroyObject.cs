@@ -42,6 +42,7 @@ public class DestroyObject : MonoBehaviour
                         if(hit.transform.gameObject.TryGetComponent<DestructibleInfo>(out DestructibleInfo di))
                         {
                             di.dh.SwapPrefabs();
+                            GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().Play("HammerHit");
                         }
                         else 
                         {
