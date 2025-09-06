@@ -52,6 +52,7 @@ public class DestructibleHandler : MonoBehaviour
         Transform savedPos = DestructibleObj.transform;
         Instantiate(SwappedPrefab, savedPos.position, savedPos.rotation, savedPos.parent);
         GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().GlassBreak();
+        DestructibleObjectManager.instance.destructibles.Remove(gameObject);
         countdown = true;
         Destroy(DestructibleObj);
     }

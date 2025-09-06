@@ -1,10 +1,10 @@
 using UnityEngine;
-
+using System.Collections.Generic;
 public class DestructibleObjectManager : MonoBehaviour
 {
     public static DestructibleObjectManager instance;
 
-    public GameObject[] destructibles;
+    public List<GameObject> destructibles = new();
     public GameObject destructiblesContainer;
     private void Awake()
     {
@@ -17,7 +17,8 @@ public class DestructibleObjectManager : MonoBehaviour
         int i = 0;
         while (i < destructiblesContainer.transform.childCount)
         {
-            
+            destructibles.Add(destructiblesContainer.transform.GetChild(i).gameObject);
+            i++;
         }
     }
 
