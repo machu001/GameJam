@@ -50,7 +50,7 @@ public class DestructibleObjectManager : MonoBehaviour
         }
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
-            ds.StartCoroutine(ds.TypeLine(1));
+
         }
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
@@ -62,7 +62,7 @@ public class DestructibleObjectManager : MonoBehaviour
             yield return new WaitForSeconds(10);
         }
 
-        yield return new WaitForSeconds(10);
+
         yield return new WaitForSeconds(10);
         if(SceneManager.GetActiveScene().buildIndex < 3) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         else SceneManager.LoadScene(0);

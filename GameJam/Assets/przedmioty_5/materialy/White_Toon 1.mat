@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: White_Toon 1
   m_Shader: {fileID: -6465566751694194690, guid: f5d5de89722fa374f8181ba1edc75a8a, type: 3}
-  m_Parent: {fileID: 2100000, guid: b2fda20151d762f4db896c3ab96b9b90, type: 2}
+  m_Parent: {fileID: 2100000, guid: 0056b0581616d984389bcd9cbe77ce35, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []

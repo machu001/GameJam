@@ -2886,6 +2886,10 @@ PrefabInstance:
       propertyPath: ds
       value: 
       objectReference: {fileID: 1988190720}
+    - target: {fileID: 4683731495573357479, guid: 93044cb9022793a45b19b595a7eeffa1, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7435970586654973993, guid: 93044cb9022793a45b19b595a7eeffa1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4684,6 +4688,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructibleObjectManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7426324781371984549, guid: bca890b302a20b0419d67b2b781ab96d, type: 3}
+      propertyPath: ds
+      value: 
+      objectReference: {fileID: 1988190720}
     - target: {fileID: 7426324781371984549, guid: bca890b302a20b0419d67b2b781ab96d, type: 3}
       propertyPath: lowTaperFade
       value: 
