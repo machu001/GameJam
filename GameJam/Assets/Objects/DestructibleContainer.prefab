@@ -46,4 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestructibleObj: {fileID: 0}
   SwappedPrefab: {fileID: 0}
+  canMove: 0
+  canDestroy: 0
   despawnTime: 5
+  countdown: 0
