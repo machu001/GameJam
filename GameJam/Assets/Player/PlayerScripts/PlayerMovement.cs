@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     public float moveSpeed;
+    public float crouchSpeed;
+    public float crouchYscale;
 
     public float groundDrag;
 
@@ -24,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     float verticalInput;
 
     public KeyCode jumpKey = KeyCode.Space;
+    public KeyCode crouchKey = KeyCode.LeftControl;
 
     public Transform orientation;
 
@@ -43,12 +46,29 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");   
         verticalInput = Input.GetAxisRaw("Vertical");  
         
-        if(Input.GetKey(jumpKey) && canJump && grounded)
+
+        if(Input.GetKeyDown(crouchKey))
+        {
+            rb.AddForce(Vector3.down * 20, ForceMode.Impulse);
+        }
+        if(Input.GetKey(crouchKey))
+        {
+            moveSpeed = crouchSpeed;
+            transform.localScale = new Vector3(transform.localScale.x, crouchYscale, transform.localScale.z);
+        }
+        else if(Input.GetKey(jumpKey) && canJump && grounded)
         {
             canJump = false;
 
             Jump();
             Invoke(nameof(ResetJump), jumpCooldown);
+        }
+
+        if(Input.GetKeyUp(crouchKey))
+        {
+            moveSpeed = 8;
+            transform.localScale = Vector3.one;
+
         }
     }
 

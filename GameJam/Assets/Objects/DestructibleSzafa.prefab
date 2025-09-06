@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestructibleObj: {fileID: 8407655879005239657}
   SwappedPrefab: {fileID: 3547380374676710562, guid: a8af73a9ee47e7249b055153bfb1d853, type: 3}
+  canMove: 0
   despawnTime: 2
 --- !u!1 &8407655879005239657
 GameObject:
@@ -61,6 +62,7 @@ GameObject:
   - component: {fileID: 8047090350541199548}
   - component: {fileID: 2375907726625444448}
   - component: {fileID: 6644184392911195150}
+  - component: {fileID: 7045605883065470875}
   m_Layer: 0
   m_Name: Szafa_full
   m_TagString: Destructible
@@ -155,7 +157,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5717236316837045918, guid: 2713edb41e78a4943aa8841198cff692, type: 3}
 --- !u!114 &6644184392911195150
@@ -171,3 +173,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dh: {fileID: 3315070521937205947}
+--- !u!54 &7045605883065470875
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8407655879005239657}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class DestructibleInfo : MonoBehaviour
@@ -19,7 +20,14 @@ public class DestructibleInfo : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Hammer"))
         {
-            dh.SwapPrefabs();
+            StartCoroutine(SwapPrefabs());
         }
+    }
+
+    public IEnumerator SwapPrefabs()
+    {
+        yield return new WaitForSeconds(0.0666f);
+
+        dh.SwapPrefabs();
     }
 }

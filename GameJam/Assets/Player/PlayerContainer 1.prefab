@@ -167,6 +167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3049526636755094305}
   - component: {fileID: 3040709522130546005}
+  - component: {fileID: 9130287131846754714}
   m_Layer: 0
   m_Name: HammerPos
   m_TagString: Untagged
@@ -209,6 +210,23 @@ MonoBehaviour:
   animator: {fileID: 5621095114802169797}
   hammerSpeed: 5
   throwCD: 1
+--- !u!114 &9130287131846754714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296326901480068915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf61b467b78fcd34b8b4f2e1e058ab38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 5621095114802169797}
+  player: {fileID: 8114082588903518241}
+  destroyRange: 4
+  hitCD: 0.5
+  mouseLookScript: {fileID: 3805855015930394757}
 --- !u!1 &1242443994794852901
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,7 +519,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3588664501631367843}
-  - component: {fileID: 5987788817800344162}
   - component: {fileID: 7864007358682703320}
   m_Layer: 0
   m_Name: Orientation
@@ -525,23 +542,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7587519410982353480}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5987788817800344162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6850386454422284313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf61b467b78fcd34b8b4f2e1e058ab38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 5621095114802169797}
-  player: {fileID: 8114082588903518241}
-  destroyRange: 2
-  hitCD: 0
-  mouseLookScript: {fileID: 3805855015930394757}
 --- !u!114 &7864007358682703320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,7 +607,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8114082588903518241}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -652,7 +652,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8114082588903518241}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 06da319cbbd18774b977146ab11b18df, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -680,16 +680,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffba1a1fc07873046b2cf7659d3465c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  groundDrag: 2
-  jumpForce: 15
+  moveSpeed: 8
+  crouchSpeed: 5
+  crouchYscale: 0.5
+  groundDrag: 5
+  jumpForce: 20
   jumpCooldown: 0.25
-  airMultiplier: 0.4
+  airMultiplier: 0.1
   playerHeight: 2
   Ground:
     serializedVersion: 2
     m_Bits: 8
   jumpKey: 32
+  crouchKey: 306
   orientation: {fileID: 3588664501631367843}
 --- !u!54 &5427387942210418787
 Rigidbody:
@@ -726,6 +729,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3049526636755094305}
     m_Modifications:
+    - target: {fileID: 4007730493147408409, guid: e3f708a80e69fcf42b2c14be35ec649f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.16406927
+      objectReference: {fileID: 0}
+    - target: {fileID: 4007730493147408409, guid: e3f708a80e69fcf42b2c14be35ec649f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.16406931
+      objectReference: {fileID: 0}
+    - target: {fileID: 4007730493147408409, guid: e3f708a80e69fcf42b2c14be35ec649f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.16406938
+      objectReference: {fileID: 0}
     - target: {fileID: 4007730493147408409, guid: e3f708a80e69fcf42b2c14be35ec649f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.424

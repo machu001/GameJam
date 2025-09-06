@@ -10,7 +10,7 @@ public class DestroyObject : MonoBehaviour
     public float destroyRange;
     bool canDrop = true;
 
-    public float hitCD;
+    public float hitCD = 0.5f;
     float hitTimer;
 
     public PlayerCam mouseLookScript;
@@ -18,18 +18,19 @@ public class DestroyObject : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        hitTimer -= Time.deltaTime;
+        if(Input.GetMouseButton(0))
         {
             Debug.Log("klika sie");
             animator.SetInteger("HammerState", 1);
             
-            if (clickedObj == null)
+            if (clickedObj == null && hitTimer < 0)
             {   
                 Debug.Log("RaycastCheck");
                 RaycastHit hit;
@@ -46,7 +47,7 @@ public class DestroyObject : MonoBehaviour
                         {
                             Debug.Log("nie znalaz³o");
                         }
-
+                        hitTimer = hitCD;
                     }   
                 }
             }
