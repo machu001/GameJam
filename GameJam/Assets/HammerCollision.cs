@@ -33,7 +33,7 @@ public class HammerCollision : MonoBehaviour
                 if (collision.gameObject.TryGetComponent<DestructibleHandler>(out DestructibleHandler t))
                 {
                     Debug.Log("Znalaz³o komponent");
-                    if (t.canDestroy)
+                    if (t.canDestroy && !hasHit)
                     {
                         t.SwapPrefabs();
                         hasHit = true;
