@@ -64,6 +64,7 @@ public class PauseScript : MonoBehaviour
         {
             PauseMenu.SetActive(true);
             Time.timeScale = 0f;
+           
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
