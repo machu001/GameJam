@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2856255535619404756, guid: 1360a7401eb93f54e920ef339d37a122, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c47a9f97ab1ff8748bd99aae22aed816, type: 2}
     - target: {fileID: 9049190669939595708, guid: 1360a7401eb93f54e920ef339d37a122, type: 3}
       propertyPath: m_Name
       value: DestructibleOkna Variant
@@ -187,7 +191,7 @@ PrefabInstance:
     - target: {fileID: 1248029341390697787, guid: 3f3277df32d5b3848a195a551a5d69f9, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: b2fda20151d762f4db896c3ab96b9b90, type: 2}
+      objectReference: {fileID: 2100000, guid: 9f050dc0ac900e547a15b2d0ca5cbbeb, type: 2}
     - target: {fileID: 2959327025854855310, guid: 3f3277df32d5b3848a195a551a5d69f9, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.4
@@ -257,6 +261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructibleChair (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3233792241966654541, guid: de7fa444f37a1e94781a3ce9b964a44c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f050dc0ac900e547a15b2d0ca5cbbeb, type: 2}
     - target: {fileID: 4371746423013236514, guid: de7fa444f37a1e94781a3ce9b964a44c, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.199
@@ -387,6 +395,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3315070521937205947, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
+      propertyPath: canDestroy
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5504341901880090095, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
       propertyPath: m_Name
       value: DestructibleSzafa (3)
@@ -398,7 +410,7 @@ PrefabInstance:
     - target: {fileID: 8047090350541199548, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: de15faa7827151144b3b6c9b6e54a794, type: 2}
+      objectReference: {fileID: 2100000, guid: 949a669b1d236704aafc22a750f27f1a, type: 2}
     - target: {fileID: 9216105181826294739, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.44
@@ -447,15 +459,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1630369868553263318, guid: 382000a382e54f94f9c9c82f6d2b635d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.738
+      value: 10.551
       objectReference: {fileID: 0}
     - target: {fileID: 1630369868553263318, guid: 382000a382e54f94f9c9c82f6d2b635d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.294453
+      value: 5.875
       objectReference: {fileID: 0}
     - target: {fileID: 1630369868553263318, guid: 382000a382e54f94f9c9c82f6d2b635d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.46046042
+      value: 2.791
       objectReference: {fileID: 0}
     - target: {fileID: 1630369868553263318, guid: 382000a382e54f94f9c9c82f6d2b635d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -489,6 +501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructibleDinozaur Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6134699155989354817, guid: 382000a382e54f94f9c9c82f6d2b635d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c47a9f97ab1ff8748bd99aae22aed816, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -559,6 +575,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3024326126542420015, guid: a66adcdae457c5c40b994334497cf68d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c47a9f97ab1ff8748bd99aae22aed816, type: 2}
     - target: {fileID: 3672805233900247546, guid: a66adcdae457c5c40b994334497cf68d, type: 3}
       propertyPath: m_TagString
       value: Destructible
@@ -580,6 +600,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1248029341390697787, guid: 3f3277df32d5b3848a195a551a5d69f9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 00e4019377380f347999129a1c67236e, type: 2}
     - target: {fileID: 2959327025854855310, guid: 3f3277df32d5b3848a195a551a5d69f9, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.88557
@@ -815,6 +839,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2856255535619404756, guid: 1360a7401eb93f54e920ef339d37a122, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c47a9f97ab1ff8748bd99aae22aed816, type: 2}
     - target: {fileID: 9049190669939595708, guid: 1360a7401eb93f54e920ef339d37a122, type: 3}
       propertyPath: m_Name
       value: DestructibleOkna Variant (3)
@@ -836,6 +864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructiblePralka (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5023787238775850187, guid: e5905e1be594c294f98c935d90c5afc7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 498a21b70d369334c8ce10caf7c5df1c, type: 2}
     - target: {fileID: 8029306310501558210, guid: e5905e1be594c294f98c935d90c5afc7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.8507984
@@ -954,7 +986,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 00e4019377380f347999129a1c67236e, type: 2}
+  - {fileID: 2100000, guid: 0056b0581616d984389bcd9cbe77ce35, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1070,6 +1102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructibleChair (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3233792241966654541, guid: de7fa444f37a1e94781a3ce9b964a44c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f050dc0ac900e547a15b2d0ca5cbbeb, type: 2}
     - target: {fileID: 4371746423013236514, guid: de7fa444f37a1e94781a3ce9b964a44c, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.199
@@ -1152,6 +1188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructiblePralka (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5023787238775850187, guid: e5905e1be594c294f98c935d90c5afc7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 498a21b70d369334c8ce10caf7c5df1c, type: 2}
     - target: {fileID: 8029306310501558210, guid: e5905e1be594c294f98c935d90c5afc7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.273
@@ -1214,6 +1254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructiblePralka
       objectReference: {fileID: 0}
+    - target: {fileID: 5023787238775850187, guid: e5905e1be594c294f98c935d90c5afc7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0056b0581616d984389bcd9cbe77ce35, type: 2}
     - target: {fileID: 8029306310501558210, guid: e5905e1be594c294f98c935d90c5afc7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.273
@@ -1331,7 +1375,7 @@ PrefabInstance:
     - target: {fileID: 5848226714545031394, guid: de5bf693e6faa274999a9fb020165281, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 41b1cb7fc7826354da291564ba633f22, type: 2}
+      objectReference: {fileID: 2100000, guid: 9f050dc0ac900e547a15b2d0ca5cbbeb, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1385,6 +1429,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2856255535619404756, guid: 1360a7401eb93f54e920ef339d37a122, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c47a9f97ab1ff8748bd99aae22aed816, type: 2}
     - target: {fileID: 9049190669939595708, guid: 1360a7401eb93f54e920ef339d37a122, type: 3}
       propertyPath: m_Name
       value: DestructibleOkna Variant (1)
@@ -1462,22 +1510,22 @@ PrefabInstance:
     - target: {fileID: 4335183362038904129, guid: 45d38033747f4394f8f4c42c29708803, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 95027fe85ef7aa14cb8ff9aa769b6a6e, type: 2}
+      objectReference: {fileID: 2100000, guid: 9f050dc0ac900e547a15b2d0ca5cbbeb, type: 2}
     - target: {fileID: 4554111794070113481, guid: 45d38033747f4394f8f4c42c29708803, type: 3}
       propertyPath: m_Name
       value: DestructibleLongDzban Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7177878837347621040, guid: 45d38033747f4394f8f4c42c29708803, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.978
+      value: 11.052
       objectReference: {fileID: 0}
     - target: {fileID: 7177878837347621040, guid: 45d38033747f4394f8f4c42c29708803, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.715
+      value: 2.904
       objectReference: {fileID: 0}
     - target: {fileID: 7177878837347621040, guid: 45d38033747f4394f8f4c42c29708803, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.268
+      value: -3.06
       objectReference: {fileID: 0}
     - target: {fileID: 7177878837347621040, guid: 45d38033747f4394f8f4c42c29708803, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1695,6 +1743,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3315070521937205947, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
+      propertyPath: canDestroy
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5504341901880090095, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
       propertyPath: m_Name
       value: DestructibleSzafa (1)
@@ -1706,7 +1758,7 @@ PrefabInstance:
     - target: {fileID: 8047090350541199548, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: de15faa7827151144b3b6c9b6e54a794, type: 2}
+      objectReference: {fileID: 2100000, guid: 00e4019377380f347999129a1c67236e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1729,6 +1781,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructibleChair
       objectReference: {fileID: 0}
+    - target: {fileID: 3233792241966654541, guid: de7fa444f37a1e94781a3ce9b964a44c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c47a9f97ab1ff8748bd99aae22aed816, type: 2}
     - target: {fileID: 6870065960981285225, guid: de7fa444f37a1e94781a3ce9b964a44c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -1846,6 +1902,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.823
       objectReference: {fileID: 0}
+    - target: {fileID: 2512028983465360302, guid: c48cfa74d1ae74b459fe2abdad973723, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c47a9f97ab1ff8748bd99aae22aed816, type: 2}
     - target: {fileID: 3426982740325203075, guid: c48cfa74d1ae74b459fe2abdad973723, type: 3}
       propertyPath: SwappedPrefab
       value: 
@@ -1891,12 +1951,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1210588151103162774, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.42136198
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210588151103162774, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.93636
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210588151103162774, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.93636
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210588151103162774, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.335
+      value: 1.45
       objectReference: {fileID: 0}
     - target: {fileID: 1210588151103162774, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.12
+      value: -0.133
       objectReference: {fileID: 0}
     - target: {fileID: 1210588151103162774, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1930,10 +2002,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3315070521937205947, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
+      propertyPath: canDestroy
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5504341901880090095, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
       propertyPath: m_Name
       value: DestructibleSzafa (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8047090350541199548, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 00e4019377380f347999129a1c67236e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1969,6 +2049,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructibleChair
       objectReference: {fileID: 0}
+    - target: {fileID: 3233792241966654541, guid: de7fa444f37a1e94781a3ce9b964a44c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f050dc0ac900e547a15b2d0ca5cbbeb, type: 2}
     - target: {fileID: 4371746423013236514, guid: de7fa444f37a1e94781a3ce9b964a44c, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.199
@@ -2046,6 +2130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructibleChair (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3233792241966654541, guid: de7fa444f37a1e94781a3ce9b964a44c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f050dc0ac900e547a15b2d0ca5cbbeb, type: 2}
     - target: {fileID: 4371746423013236514, guid: de7fa444f37a1e94781a3ce9b964a44c, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.199
@@ -2140,7 +2228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6075635978373208723, guid: 3e91638e3daa9b14c9979ddfc58bf177, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.983
+      value: 10.044
       objectReference: {fileID: 0}
     - target: {fileID: 6075635978373208723, guid: 3e91638e3daa9b14c9979ddfc58bf177, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2181,7 +2269,7 @@ PrefabInstance:
     - target: {fileID: 8151017543950302998, guid: 3e91638e3daa9b14c9979ddfc58bf177, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 9f050dc0ac900e547a15b2d0ca5cbbeb, type: 2}
+      objectReference: {fileID: 2100000, guid: c47a9f97ab1ff8748bd99aae22aed816, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2259,6 +2347,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598252682}
     m_Modifications:
+    - target: {fileID: 3745047151431432453, guid: e51278badb9bad541844a16f1396a5e9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c47a9f97ab1ff8748bd99aae22aed816, type: 2}
     - target: {fileID: 4608149631632819278, guid: e51278badb9bad541844a16f1396a5e9, type: 3}
       propertyPath: m_Name
       value: Destructible_Sink (1)
@@ -2405,48 +2497,48 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 581674243947562749, guid: f154c04264c862146a6af91956509ba6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.116
+      value: 2.056936
       objectReference: {fileID: 0}
     - target: {fileID: 581674243947562749, guid: f154c04264c862146a6af91956509ba6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.17
+      value: 7.687035
       objectReference: {fileID: 0}
     - target: {fileID: 581674243947562749, guid: f154c04264c862146a6af91956509ba6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.908
+      value: 9.566458
       objectReference: {fileID: 0}
     - target: {fileID: 581674243947562749, guid: f154c04264c862146a6af91956509ba6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.65761924
+      value: 0.934337
       objectReference: {fileID: 0}
     - target: {fileID: 581674243947562749, guid: f154c04264c862146a6af91956509ba6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.25056776
+      value: -0.35608876
       objectReference: {fileID: 0}
     - target: {fileID: 581674243947562749, guid: f154c04264c862146a6af91956509ba6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.66122293
+      value: 0.013623846
       objectReference: {fileID: 0}
     - target: {fileID: 581674243947562749, guid: f154c04264c862146a6af91956509ba6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.25987872
+      value: -0.005438366
       objectReference: {fileID: 0}
     - target: {fileID: 581674243947562749, guid: f154c04264c862146a6af91956509ba6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.809
+      value: -41.703
       objectReference: {fileID: 0}
     - target: {fileID: 581674243947562749, guid: f154c04264c862146a6af91956509ba6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: 2.252
       objectReference: {fileID: 0}
     - target: {fileID: 581674243947562749, guid: f154c04264c862146a6af91956509ba6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 42.317
+      value: -1.525
       objectReference: {fileID: 0}
     - target: {fileID: 1333020099231897398, guid: f154c04264c862146a6af91956509ba6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 8ffbd220a6996d049ab56c3760854731, type: 2}
+      objectReference: {fileID: 2100000, guid: 9f050dc0ac900e547a15b2d0ca5cbbeb, type: 2}
     - target: {fileID: 3153928978510107580, guid: f154c04264c862146a6af91956509ba6, type: 3}
       propertyPath: m_Name
       value: DestructibleLozko
@@ -2517,6 +2609,14 @@ PrefabInstance:
     - target: {fileID: 6075635978373208723, guid: 3e91638e3daa9b14c9979ddfc58bf177, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013537943234905209, guid: 3e91638e3daa9b14c9979ddfc58bf177, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.837
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013537943234905209, guid: 3e91638e3daa9b14c9979ddfc58bf177, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.491
       objectReference: {fileID: 0}
     - target: {fileID: 8151017543950302998, guid: 3e91638e3daa9b14c9979ddfc58bf177, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -2614,6 +2714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructibleChair (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3233792241966654541, guid: de7fa444f37a1e94781a3ce9b964a44c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f050dc0ac900e547a15b2d0ca5cbbeb, type: 2}
     - target: {fileID: 4371746423013236514, guid: de7fa444f37a1e94781a3ce9b964a44c, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.199
@@ -2696,6 +2800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructibleChair (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3233792241966654541, guid: de7fa444f37a1e94781a3ce9b964a44c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f050dc0ac900e547a15b2d0ca5cbbeb, type: 2}
     - target: {fileID: 4371746423013236514, guid: de7fa444f37a1e94781a3ce9b964a44c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.020008221
@@ -2816,7 +2924,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1753360756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2914,6 +3022,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2032092905540791615, guid: 798e19044f487cb4d8bb0b8629c065f3, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3172580620900054729, guid: 798e19044f487cb4d8bb0b8629c065f3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.4
@@ -2954,6 +3066,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.003
       objectReference: {fileID: 0}
+    - target: {fileID: 6009658770597046243, guid: 798e19044f487cb4d8bb0b8629c065f3, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a2171dabf70d16f4ea936364a36d857a, type: 2}
     - target: {fileID: 8117952791321273008, guid: 798e19044f487cb4d8bb0b8629c065f3, type: 3}
       propertyPath: m_Name
       value: DestructibleSzafa (2) Variant
@@ -3011,10 +3127,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3315070521937205947, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
+      propertyPath: canDestroy
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5504341901880090095, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
       propertyPath: m_Name
       value: DestructibleSzafa
       objectReference: {fileID: 0}
+    - target: {fileID: 8047090350541199548, guid: 43cf7ad8c8470044aac4978149e5d291, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 00e4019377380f347999129a1c67236e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3068,6 +3192,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2856255535619404756, guid: 1360a7401eb93f54e920ef339d37a122, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c47a9f97ab1ff8748bd99aae22aed816, type: 2}
+    - target: {fileID: 4028568386258176187, guid: 1360a7401eb93f54e920ef339d37a122, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.267
+      objectReference: {fileID: 0}
     - target: {fileID: 9049190669939595708, guid: 1360a7401eb93f54e920ef339d37a122, type: 3}
       propertyPath: m_Name
       value: DestructibleOkna Variant (2)
@@ -3096,7 +3228,7 @@ PrefabInstance:
     - target: {fileID: 2999310937924865415, guid: 5b09c5382bf452943a3ccf937e61c6fa, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 4881d8d018c843d4e8940d900e6a21e7, type: 2}
+      objectReference: {fileID: 2100000, guid: b2b75043eede82a40bf5b5c20096a20e, type: 2}
     - target: {fileID: 4594186968818034887, guid: 5b09c5382bf452943a3ccf937e61c6fa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.309
@@ -3195,6 +3327,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructiblePralka (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5023787238775850187, guid: e5905e1be594c294f98c935d90c5afc7, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 498a21b70d369334c8ce10caf7c5df1c, type: 2}
     - target: {fileID: 8029306310501558210, guid: e5905e1be594c294f98c935d90c5afc7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.273
@@ -3523,10 +3659,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5001802354769371694, guid: 382000a382e54f94f9c9c82f6d2b635d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.514
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001802354769371694, guid: 382000a382e54f94f9c9c82f6d2b635d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.134
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001802354769371694, guid: 382000a382e54f94f9c9c82f6d2b635d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.591
+      objectReference: {fileID: 0}
     - target: {fileID: 5336689178607307951, guid: 382000a382e54f94f9c9c82f6d2b635d, type: 3}
       propertyPath: m_Name
       value: DestructibleDinozaur Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6134699155989354817, guid: 382000a382e54f94f9c9c82f6d2b635d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f050dc0ac900e547a15b2d0ca5cbbeb, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3584,6 +3736,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6009658770597046243, guid: 798e19044f487cb4d8bb0b8629c065f3, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 00e4019377380f347999129a1c67236e, type: 2}
     - target: {fileID: 8117952791321273008, guid: 798e19044f487cb4d8bb0b8629c065f3, type: 3}
       propertyPath: m_Name
       value: DestructibleSzafa (2)
@@ -3593,6 +3749,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 798e19044f487cb4d8bb0b8629c065f3, type: 3}
+--- !u!1001 &1291206186715919458
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 789433034918127463, guid: 5e88024fd6a677d488513254616b8406, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.184
+      objectReference: {fileID: 0}
+    - target: {fileID: 789433034918127463, guid: 5e88024fd6a677d488513254616b8406, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.552
+      objectReference: {fileID: 0}
+    - target: {fileID: 789433034918127463, guid: 5e88024fd6a677d488513254616b8406, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.255
+      objectReference: {fileID: 0}
+    - target: {fileID: 789433034918127463, guid: 5e88024fd6a677d488513254616b8406, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 789433034918127463, guid: 5e88024fd6a677d488513254616b8406, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 789433034918127463, guid: 5e88024fd6a677d488513254616b8406, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 789433034918127463, guid: 5e88024fd6a677d488513254616b8406, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 789433034918127463, guid: 5e88024fd6a677d488513254616b8406, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 789433034918127463, guid: 5e88024fd6a677d488513254616b8406, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 789433034918127463, guid: 5e88024fd6a677d488513254616b8406, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5297603950780007655, guid: 5e88024fd6a677d488513254616b8406, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 498a21b70d369334c8ce10caf7c5df1c, type: 2}
+    - target: {fileID: 6222610604089258782, guid: 5e88024fd6a677d488513254616b8406, type: 3}
+      propertyPath: m_Name
+      value: DestructibleKwiatek
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e88024fd6a677d488513254616b8406, type: 3}
 --- !u!1001 &2561690732977701473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3702,6 +3919,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6840568315335242283, guid: cf3e8c058988cee43a2248e9b6ef112b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 00e4019377380f347999129a1c67236e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3794,6 +4015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DestructibleFridge
       objectReference: {fileID: 0}
+    - target: {fileID: 7715233619613535188, guid: 3055a042558d6804cb3b6d7d56245027, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0056b0581616d984389bcd9cbe77ce35, type: 2}
     - target: {fileID: 8075790214613232129, guid: 3055a042558d6804cb3b6d7d56245027, type: 3}
       propertyPath: m_TagString
       value: Destructible
@@ -3818,7 +4043,7 @@ PrefabInstance:
     - target: {fileID: 561634638186718627, guid: 5a529b47b479c014a95d2a3be986ecf8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 498a21b70d369334c8ce10caf7c5df1c, type: 2}
+      objectReference: {fileID: 2100000, guid: 00e4019377380f347999129a1c67236e, type: 2}
     - target: {fileID: 735699009961796134, guid: 5a529b47b479c014a95d2a3be986ecf8, type: 3}
       propertyPath: m_Name
       value: LevelLayout
@@ -3838,7 +4063,7 @@ PrefabInstance:
     - target: {fileID: 1196398938433899087, guid: 5a529b47b479c014a95d2a3be986ecf8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 498a21b70d369334c8ce10caf7c5df1c, type: 2}
+      objectReference: {fileID: 2100000, guid: a2171dabf70d16f4ea936364a36d857a, type: 2}
     - target: {fileID: 1924176131969476875, guid: 5a529b47b479c014a95d2a3be986ecf8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -3846,7 +4071,7 @@ PrefabInstance:
     - target: {fileID: 2246605648120307607, guid: 5a529b47b479c014a95d2a3be986ecf8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 498a21b70d369334c8ce10caf7c5df1c, type: 2}
+      objectReference: {fileID: 2100000, guid: a2171dabf70d16f4ea936364a36d857a, type: 2}
     - target: {fileID: 2498288119458195606, guid: 5a529b47b479c014a95d2a3be986ecf8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -3980,6 +4205,10 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7792396338814645865, guid: 2fbe8a9fb54626643b1ee72173991158, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8ffbd220a6996d049ab56c3760854731, type: 2}
     - target: {fileID: 8283674708116900846, guid: 2fbe8a9fb54626643b1ee72173991158, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -4018,3 +4247,4 @@ SceneRoots:
   - {fileID: 993665503}
   - {fileID: 2121962290}
   - {fileID: 63989068}
+  - {fileID: 1291206186715919458}
