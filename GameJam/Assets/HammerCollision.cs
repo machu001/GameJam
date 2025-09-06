@@ -3,6 +3,7 @@ using UnityEngine;
 public class HammerCollision : MonoBehaviour
 {
     public float despawnTime = 3f;
+    bool hasHit = false;
     bool countdown = false;
     float despawnTimer;
 
@@ -24,6 +25,7 @@ public class HammerCollision : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         GameObject go = collision.gameObject;
+        if (hasHit) return;
         if (go != null)
         {
             if(go.CompareTag("Destructible"))
@@ -31,7 +33,11 @@ public class HammerCollision : MonoBehaviour
                 if (collision.gameObject.TryGetComponent<DestructibleHandler>(out DestructibleHandler t))
                 {
                     Debug.Log("Znalaz³o komponent");
-                    if(t.canDestroy) t.SwapPrefabs();
+                    if (t.canDestroy)
+                    {
+                        t.SwapPrefabs();
+                        hasHit = true;
+                    }
                 }
               
             }
