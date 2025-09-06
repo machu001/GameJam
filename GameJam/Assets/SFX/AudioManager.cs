@@ -16,6 +16,13 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == "BgMusic");
+        s.source.loop = true;
+        s.source.Play();
+    }
+
     // Update is called once per frame
     public void Play(string Name)
     {

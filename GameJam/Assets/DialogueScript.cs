@@ -15,8 +15,6 @@ public class DialogueScript : MonoBehaviour
     void Start()
     {
         textComponent.text = string.Empty;
-
-        Invoke("StartDialogue", 3f);
     }
 
     // Update is called once per frame
@@ -30,7 +28,7 @@ public class DialogueScript : MonoBehaviour
     }
 
 
-    void StartDialogue()
+    public void StartDialogue()
     {
         index = 0;
         StartCoroutine(TypeLine());
@@ -41,7 +39,17 @@ public class DialogueScript : MonoBehaviour
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
+            yield return new WaitForSecondsRealtime(textSpeed);
+        }
+        check = false;
+    }
+
+    IEnumerator TypeLine(int index)
+    {
+        foreach (char c in lines[index].ToCharArray())
+        {
+            textComponent.text += c;
+            yield return new WaitForSecondsRealtime(textSpeed);
         }
         check = false;
     }
@@ -53,7 +61,7 @@ public class DialogueScript : MonoBehaviour
         {
             yield return new WaitForSeconds(3);
             textComponent.text = string.Empty;
-            index++;
+            ++index;
             StartCoroutine(TypeLine());
         }
         else
