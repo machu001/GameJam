@@ -22,8 +22,7 @@ public class FadeScript : MonoBehaviour
         }
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
-            Invoke(nameof(FadeIn), 20);
-            ds.StartDialogue();
+
         }
     }
     public void FadeIn()

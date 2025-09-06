@@ -57,6 +57,7 @@ public class DestructibleObjectManager : MonoBehaviour
             ds.StartCoroutine(ds.TypeLine(0));
             DestroyMap.Instance.DestroyTheMap();
             yield return new WaitForSeconds(15);
+
             ds.StartCoroutine(ds.TypeLine(1));
             yield return new WaitForSeconds(10);
         }

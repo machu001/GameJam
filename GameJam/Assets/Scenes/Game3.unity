@@ -2902,9 +2902,17 @@ PrefabInstance:
         a razem z nimi l\u0119k\u2026 ogromny i irracjonalny.  Nie odcinajmy innych
         - rozmawiajmy, pomagajmy."
       objectReference: {fileID: 0}
+    - target: {fileID: 4431858051558081797, guid: 93044cb9022793a45b19b595a7eeffa1, type: 3}
+      propertyPath: ds
+      value: 
+      objectReference: {fileID: 1988190720}
+    - target: {fileID: 4683731495573357479, guid: 93044cb9022793a45b19b595a7eeffa1, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5962361949249538476, guid: 93044cb9022793a45b19b595a7eeffa1, type: 3}
       propertyPath: m_Alpha
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7435970586654973993, guid: 93044cb9022793a45b19b595a7eeffa1, type: 3}
       propertyPath: m_Pivot.x
@@ -3008,7 +3016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9089670486873691887, guid: 93044cb9022793a45b19b595a7eeffa1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
