@@ -6,7 +6,6 @@ public class DestroyObject : MonoBehaviour
 {
     public Animator animator;
     public GameObject player;
-    GameObject clickedObj;
     public float destroyRange;
     bool canDrop = true;
 
@@ -27,12 +26,11 @@ public class DestroyObject : MonoBehaviour
         hitTimer -= Time.deltaTime;
         if(Input.GetMouseButton(0))
         {
-            Debug.Log("klika sie");
             animator.SetInteger("HammerState", 1);
             
-            if (clickedObj == null && hitTimer < 0)
-            {   
-                Debug.Log("RaycastCheck");
+            if (hitTimer < 0)
+            {
+                
                 RaycastHit hit;
                 if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, destroyRange))
                 {
@@ -41,6 +39,7 @@ public class DestroyObject : MonoBehaviour
                     {
                         if(hit.transform.gameObject.TryGetComponent<DestructibleInfo>(out DestructibleInfo di))
                         {
+                            GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().Play("HammerHit");
                             di.dh.SwapPrefabs();
                         }
                         else 
@@ -58,19 +57,6 @@ public class DestroyObject : MonoBehaviour
             animator.SetInteger("HammerState", 0);
         }
         
-    }
-
-    void StopClipping()
-    {
-        var clipRange = Vector3.Distance(clickedObj.transform.position, transform.position);
-        RaycastHit[] hits;
-        hits = Physics.RaycastAll(transform.position, transform.TransformDirection(Vector3.forward), clipRange);
-
-        if (hits.Length > 1)
-        {
-            clickedObj.transform.position = transform.position + new Vector3(0f, -0.5f, 0f);
-        }
-     
     }
 
     private IEnumerator Wait(float seconds)

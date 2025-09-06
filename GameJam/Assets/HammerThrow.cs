@@ -36,6 +36,7 @@ public class HammerThrow : MonoBehaviour
         if (Input.GetMouseButtonUp(1))
         {
             animator.SetInteger("HammerState", 0);
+            GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().Play("HammerThrow");
             if (currCD >= 0)
             {
                 currCD -= Time.deltaTime;
