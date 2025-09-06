@@ -48,7 +48,7 @@ MonoBehaviour:
   DestructibleObj: {fileID: 8177515977163765311}
   SwappedPrefab: {fileID: 5549922934933329736, guid: 6f70b64728e916b4ca955aee6558a196, type: 3}
   canMove: 0
-  canDestroy: 0
+  canDestroy: 1
   despawnTime: 5
   countdown: 0
 --- !u!1 &8177515977163765311
