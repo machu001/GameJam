@@ -224,7 +224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 5621095114802169797}
   player: {fileID: 8114082588903518241}
-  destroyRange: 4
+  destroyRange: 3
   hitCD: 0.5
   mouseLookScript: {fileID: 3805855015930394757}
 --- !u!1 &1242443994794852901
@@ -520,6 +520,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3588664501631367843}
   - component: {fileID: 7864007358682703320}
+  - component: {fileID: 7529573636058128625}
   m_Layer: 0
   m_Name: Orientation
   m_TagString: Untagged
@@ -543,6 +544,18 @@ Transform:
   m_Father: {fileID: 7587519410982353480}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7864007358682703320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6850386454422284313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1270d54fee3fd204aa8c37775cdfe907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7529573636058128625
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

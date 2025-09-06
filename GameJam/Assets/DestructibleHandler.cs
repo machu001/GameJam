@@ -58,7 +58,7 @@ public class DestructibleHandler : MonoBehaviour
 
     public void MoveObject()
     {
-        Vector3 RandomVector = new Vector3(Random.Range(-100, 100f), Random.Range(-100, 100f), Random.Range(-100, 100f));
+        Vector3 RandomVector = new Vector3(Random.Range(-50, 50f), Random.Range(-50, 50f), Random.Range(-50, 50f));
         if (DestructibleObj == null) return;
         if(DestructibleObj.TryGetComponent(out Rigidbody rb))
         {

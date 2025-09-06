@@ -47,7 +47,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestructibleObj: {fileID: 7646768247895613123}
   SwappedPrefab: {fileID: 2986358789144604450, guid: 8ee97ce2e327a474b8a7324baf266a26, type: 3}
+  canMove: 1
+  canDestroy: 1
   despawnTime: 5
+  countdown: 0
 --- !u!1 &7646768247895613123
 GameObject:
   m_ObjectHideFlags: 0
