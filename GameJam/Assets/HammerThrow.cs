@@ -35,6 +35,7 @@ public class HammerThrow : MonoBehaviour
         }
         if (Input.GetMouseButtonUp(1))
         {
+            animator.SetInteger("HammerState", 0);
             if (currCD >= 0)
             {
                 currCD -= Time.deltaTime;
@@ -44,7 +45,7 @@ public class HammerThrow : MonoBehaviour
             else ThrowHammer(hammerSpeed);
             holdTime = 0;
             cam.fieldOfView = 75;
-            animator.SetInteger("HammerState", 0);
+            
         }
         if (currCD > 0) currCD -= Time.deltaTime;
     }

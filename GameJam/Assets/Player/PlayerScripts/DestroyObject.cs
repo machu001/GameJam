@@ -30,7 +30,7 @@ public class DestroyObject : MonoBehaviour
             animator.SetInteger("HammerState", 1);
             
             if (clickedObj == null)
-            {
+            {   
                 Debug.Log("RaycastCheck");
                 RaycastHit hit;
                 if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, destroyRange))
