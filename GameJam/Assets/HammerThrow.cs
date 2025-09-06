@@ -6,6 +6,8 @@ public class HammerThrow : MonoBehaviour
     public Camera cam;
     public GameObject HammerPrefab;
     public Transform ThrowPos;
+    public PlayerCam cameraLookScript;
+    public Animator animator;
 
     public float hammerSpeed;
 
@@ -25,8 +27,11 @@ public class HammerThrow : MonoBehaviour
         
         if (Input.GetMouseButton(1))
         {
+            if (holdTime > 2f) animator.SetInteger("HammerState", 3);
+            else animator.SetInteger("HammerState", 2);
             holdTime += Time.deltaTime;
             if (holdTime > 0.25f) cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, 50, 0.01f);
+
         }
         if (Input.GetMouseButtonUp(1))
         {
@@ -39,6 +44,7 @@ public class HammerThrow : MonoBehaviour
             else ThrowHammer(hammerSpeed);
             holdTime = 0;
             cam.fieldOfView = 75;
+            animator.SetInteger("HammerState", 0);
         }
         if (currCD > 0) currCD -= Time.deltaTime;
     }
@@ -49,7 +55,7 @@ public class HammerThrow : MonoBehaviour
         thrownObj.transform.parent = null;
         currCD = throwCD;
         Rigidbody hammerRB = thrownObj.GetComponent<Rigidbody>();
-        hammerRB.linearVelocity = transform.forward * speed;
+        hammerRB.linearVelocity = transform.TransformDirection(Vector3.forward) * speed;
     }
 
 }

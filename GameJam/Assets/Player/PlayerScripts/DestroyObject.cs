@@ -10,6 +10,9 @@ public class DestroyObject : MonoBehaviour
     public float destroyRange;
     bool canDrop = true;
 
+    public float hitCD;
+    float hitTimer;
+
     public PlayerCam mouseLookScript;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,28 +27,36 @@ public class DestroyObject : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             Debug.Log("klika sie");
+            animator.SetInteger("HammerState", 1);
+            
             if (clickedObj == null)
             {
                 Debug.Log("RaycastCheck");
                 RaycastHit hit;
                 if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, destroyRange))
                 {
-                    Debug.Log("Raycast dzia³a");
+                    Debug.Log(hit.transform.gameObject);
                     if(hit.transform.gameObject.CompareTag("Destructible"))
                     {
-                        animator.SetInteger("HammerState", 1);
-                        animator.SetInteger("HammerState", 0);
-                        StartCoroutine(Wait(0.6f));
-                        clickedObj = hit.transform.gameObject;
-                        Destroy(clickedObj);
+                        if(hit.transform.gameObject.TryGetComponent<DestructibleInfo>(out DestructibleInfo di))
+                        {
+                            di.dh.SwapPrefabs();
+                        }
+                        else 
+                        {
+                            Debug.Log("nie znalaz³o");
+                        }
 
                     }   
                 }
-                animator.SetInteger("HammerState", 1);
-                animator.SetInteger("HammerState", 0);
-                StartCoroutine(Wait(0.6f));
             }
         }
+
+        if(Input.GetMouseButtonUp(0))
+        {
+            animator.SetInteger("HammerState", 0);
+        }
+        
     }
 
     void StopClipping()
