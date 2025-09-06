@@ -20,18 +20,14 @@ public class DialogueScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (textComponent.text == lines[index] && !check)
-        {
-            StartCoroutine(NextLine());
-            check = true;
-        }
+
     }
 
 
     public void StartDialogue()
     {
         index = 0;
-        StartCoroutine(TypeLine());
+        StartCoroutine(TypeLine(0));
     }
 
     IEnumerator TypeLine()
@@ -44,8 +40,9 @@ public class DialogueScript : MonoBehaviour
         check = false;
     }
 
-    IEnumerator TypeLine(int index)
+    public IEnumerator TypeLine(int index)
     {
+        textComponent.text = string.Empty;
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;

@@ -8,6 +8,7 @@ public class DestructibleObjectManager : MonoBehaviour
     bool check = false;
     public List<GameObject> destructibles = new();
     public GameObject destructiblesContainer;
+    public DialogueScript ds;
 
     public FadeScript lowTaperFade;
     private void Awake()
@@ -43,6 +44,24 @@ public class DestructibleObjectManager : MonoBehaviour
         
         lowTaperFade.FadeOut();
 
+        if(SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            ds.StartCoroutine(ds.TypeLine(1));
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            ds.StartCoroutine(ds.TypeLine(1));
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            ds.StartCoroutine(ds.TypeLine(0));
+            DestroyMap.Instance.DestroyTheMap();
+            yield return new WaitForSeconds(15);
+            ds.StartCoroutine(ds.TypeLine(1));
+            yield return new WaitForSeconds(10);
+        }
+
+        yield return new WaitForSeconds(10);
         yield return new WaitForSeconds(10);
         if(SceneManager.GetActiveScene().buildIndex < 3) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         else SceneManager.LoadScene(0);

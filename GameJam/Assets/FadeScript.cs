@@ -12,17 +12,17 @@ public class FadeScript : MonoBehaviour
     {
         if(SceneManager.GetActiveScene().buildIndex == 1)
         {
-            Invoke(nameof(FadeIn), 10);
+            Invoke(nameof(FadeIn), 15);
             ds.StartDialogue();
         }
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
-            Invoke(nameof(FadeIn), 12);
+            Invoke(nameof(FadeIn), 15);
             ds.StartDialogue();
         }
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
-            Invoke(nameof(FadeIn), 15);
+            Invoke(nameof(FadeIn), 20);
             ds.StartDialogue();
         }
     }
