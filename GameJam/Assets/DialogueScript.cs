@@ -14,7 +14,7 @@ public class DialogueScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        textComponent.text = string.Empty;
+        
     }
 
     // Update is called once per frame
