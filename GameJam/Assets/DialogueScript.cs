@@ -8,33 +8,27 @@ public class DialogueScript : MonoBehaviour
     public GameObject DialogueBox;
     public string[] lines;
     public float textSpeed;
-
     private int index;
+    bool check = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         textComponent.text = string.Empty;
 
-        Invoke("StartDialogue", 5f);
+        Invoke("StartDialogue", 3f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (textComponent.text == lines[index] && !check)
         {
-            if (textComponent.text == lines[index])
-            {
-                NextLine();
-            }
-            else
-            {
-                StopAllCoroutines();
-                textComponent.text = lines[index];
-            }
+            StartCoroutine(NextLine());
+            check = true;
         }
     }
+
 
     void StartDialogue()
     {
@@ -49,19 +43,23 @@ public class DialogueScript : MonoBehaviour
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
+        check = false;
     }
 
-    void NextLine()
+    IEnumerator NextLine()
     {
+        Debug.Log("Log");
         if (index < lines.Length - 1)
         {
-            index++;
+            yield return new WaitForSeconds(3);
             textComponent.text = string.Empty;
+            index++;
             StartCoroutine(TypeLine());
         }
         else
         {
             DialogueBox.SetActive(false);
+           
         }
     }
 }

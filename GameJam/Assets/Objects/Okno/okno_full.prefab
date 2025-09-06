@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4899410235989995886}
   m_Layer: 0
   m_Name: okno_full
-  m_TagString: Untagged
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 015446b6f81328a4980ad8873e8d5c88, type: 2}
+  - {fileID: 2100000, guid: 9f050dc0ac900e547a15b2d0ca5cbbeb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
